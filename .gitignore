@@ -1,3 +1,21 @@
+# Directories
+.vs/
+.vscode/
+bin*/
+logs/
+
+# Files
+*.user
+*.DS_STORE
+*.xcworkspace/
+*.xcodeproj/
+*.vcxproj*
+*.sln
+*Makefile
+*.pyc
+
+
+
 # Prerequisites
 *.d
 
@@ -30,3 +48,12 @@
 *.exe
 *.out
 *.app
+
+# Allow list
+!premake5.exe
+!premake5
+!lpremake5
+!*.dll
+!*.lib
+!*.so
+!*.dynlib

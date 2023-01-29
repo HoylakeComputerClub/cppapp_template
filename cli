@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+"""
+cli build
+cli run
+cli gen
+cli version
+cli gen build run
+"""
+
+import sys
+import subprocess
+
+TOOLS_DIR = "tools"
+
+def RunCmd(cmd):
+    subprocess.call(["python3", f"{TOOLS_DIR}/{cmd}.py"])
+
+
+for i in range(1, len(sys.argv)):
+    cmd = sys.argv[i]
+    print(f"------ Running Command: {cmd} -------")
+    RunCmd(cmd)
+    
